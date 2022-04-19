@@ -78,4 +78,35 @@ body {
   text-decoration: none;
   color: dodgerblue;
   border-radius: 8px;
+  box-shadow: 2px 2px 2px #000;
+  transition: 0.1s ease-in all;
+}
+
+.is-featured {
+  color: #fff;
+  background-color: dodgerblue;
+}
+
+.pricing-button:hover {
+  transform: scale(1.05);
+}
+
+.pricing-button:active {
+  transform: scale(1);
+}
+
+@media (min-width: 600px) {
+  .panel {
+    flex-direction: row;
+  }
+
+  .pricing-plan {
+    border-bottom: none;
+    border-right: 1px solid #e1f1ff;
+    padding: 0 2rem;
+  }
+
+  .pricing-plan:last-child {
+    border-right: none;
+  }
 }
